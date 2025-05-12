@@ -1,0 +1,128 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f9f4;
+    color: #333;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header {
+     background-image: url('https://www.ruraltectv.com.br/wp-content/uploads/2021/03/Agricultura-Familiar-Desafios-e-Oportunidades.jpg'); /* Imagem que você forneceu */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: rgb(153, 80, 80);
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.header-text p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tabs {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.tabs-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.tabs-nav ul li {
+    margin: 0 20px;
+}
+
+.tabs-nav ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #4CAF50; /* Cor verde para links */
+    transition: color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.tabs-nav ul li a:hover {
+    color: #ffffff;
+    background-color: #4CAF50;
+}
+
+.tabs-nav ul li a.active {
+    color: #ffffff;
+    background-color: #4CAF50;
+}
+
+.tabs-content .tab-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.tabs-content .tab-content.active {
+    display: block;
+    opacity: 1;
+}
+
+footer {
+    background-color: #2C3E50;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+    border-radius: 20px 20px 0 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Adicionar animações e bordas arredondadas em botões */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388E3C;
+}
+
+/* Container responsivo */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
